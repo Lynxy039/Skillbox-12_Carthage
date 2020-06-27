@@ -1,0 +1,460 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		362E49CE24A668D500470330 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362E49CD24A668D500470330 /* AppDelegate.swift */; };
+		362E49D024A668D500470330 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362E49CF24A668D500470330 /* SceneDelegate.swift */; };
+		362E49D724A668D800470330 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 362E49D624A668D800470330 /* Assets.xcassets */; };
+		362E49DA24A668D800470330 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 362E49D824A668D800470330 /* LaunchScreen.storyboard */; };
+		36F3B8DE24A673760031568E /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36F3B8DD24A673760031568E /* Alamofire.framework */; };
+		36F3B8DF24A673760031568E /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 36F3B8DD24A673760031568E /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		36F3B8E724A6757B0031568E /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F3B8E324A6757A0031568E /* DateFormatter.swift */; };
+		36F3B8E824A6757B0031568E /* DailyWeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F3B8E424A6757A0031568E /* DailyWeatherModel.swift */; };
+		36F3B8E924A6757B0031568E /* CurrentWeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F3B8E524A6757A0031568E /* CurrentWeatherModel.swift */; };
+		36F3B8EA24A6757B0031568E /* WeatherLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F3B8E624A6757A0031568E /* WeatherLoader.swift */; };
+		36F3B8EE24A677FD0031568E /* CurrentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F3B8EC24A677FD0031568E /* CurrentViewController.swift */; };
+		36F3B8EF24A677FD0031568E /* DailyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F3B8ED24A677FD0031568E /* DailyTableViewController.swift */; };
+		36F3B8F224A6781E0031568E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36F3B8F024A6781E0031568E /* Main.storyboard */; };
+		36F3B8F524A67A0D0031568E /* DayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F3B8F424A67A0D0031568E /* DayTableViewCell.swift */; };
+		36F3B8F824A67A6B0031568E /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36F3B8F624A67A6B0031568E /* SVProgressHUD.framework */; };
+		36F3B8F924A67A6B0031568E /* SVProgressHUD.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 36F3B8F624A67A6B0031568E /* SVProgressHUD.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		36F3B8FA24A67A6B0031568E /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36F3B8F724A67A6B0031568E /* SwiftyJSON.framework */; };
+		36F3B8FB24A67A6C0031568E /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 36F3B8F724A67A6B0031568E /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		36F3B8E024A673760031568E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				36F3B8F924A67A6B0031568E /* SVProgressHUD.framework in Embed Frameworks */,
+				36F3B8DF24A673760031568E /* Alamofire.framework in Embed Frameworks */,
+				36F3B8FB24A67A6C0031568E /* SwiftyJSON.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		362E49CA24A668D500470330 /* SkillBox12_Carthage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkillBox12_Carthage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		362E49CD24A668D500470330 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		362E49CF24A668D500470330 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		362E49D624A668D800470330 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		362E49D924A668D800470330 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		362E49DB24A668D800470330 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36F3B8DD24A673760031568E /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		36F3B8E324A6757A0031568E /* DateFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateFormatter.swift; path = "../../../Skillbox 12/Skillbox 12/Model/DateFormatter.swift"; sourceTree = "<group>"; };
+		36F3B8E424A6757A0031568E /* DailyWeatherModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DailyWeatherModel.swift; path = "../../../Skillbox 12/Skillbox 12/Model/DailyWeatherModel.swift"; sourceTree = "<group>"; };
+		36F3B8E524A6757A0031568E /* CurrentWeatherModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CurrentWeatherModel.swift; path = "../../../Skillbox 12/Skillbox 12/Model/CurrentWeatherModel.swift"; sourceTree = "<group>"; };
+		36F3B8E624A6757A0031568E /* WeatherLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WeatherLoader.swift; path = "../../../Skillbox 12/Skillbox 12/Model/WeatherLoader.swift"; sourceTree = "<group>"; };
+		36F3B8EC24A677FD0031568E /* CurrentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CurrentViewController.swift; path = "../../../Skillbox 12/Skillbox 12/Controller/CurrentViewController.swift"; sourceTree = "<group>"; };
+		36F3B8ED24A677FD0031568E /* DailyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DailyTableViewController.swift; path = "../../../Skillbox 12/Skillbox 12/Controller/DailyTableViewController.swift"; sourceTree = "<group>"; };
+		36F3B8F124A6781E0031568E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../Skillbox 12/Skillbox 12/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
+		36F3B8F424A67A0D0031568E /* DayTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DayTableViewCell.swift; path = "../../../Skillbox 12/Skillbox 12/View/DayTableViewCell.swift"; sourceTree = "<group>"; };
+		36F3B8F624A67A6B0031568E /* SVProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SVProgressHUD.framework; path = Carthage/Build/iOS/SVProgressHUD.framework; sourceTree = "<group>"; };
+		36F3B8F724A67A6B0031568E /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		362E49C724A668D500470330 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36F3B8F824A67A6B0031568E /* SVProgressHUD.framework in Frameworks */,
+				36F3B8DE24A673760031568E /* Alamofire.framework in Frameworks */,
+				36F3B8FA24A67A6B0031568E /* SwiftyJSON.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		362E49C124A668D500470330 = {
+			isa = PBXGroup;
+			children = (
+				362E49CC24A668D500470330 /* SkillBox12_Carthage */,
+				362E49CB24A668D500470330 /* Products */,
+				36F3B8DB24A6736F0031568E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		362E49CB24A668D500470330 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				362E49CA24A668D500470330 /* SkillBox12_Carthage.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		362E49CC24A668D500470330 /* SkillBox12_Carthage */ = {
+			isa = PBXGroup;
+			children = (
+				36F3B8E224A675630031568E /* Model */,
+				36F3B8F324A679FB0031568E /* View */,
+				36F3B8EB24A677D30031568E /* Controller */,
+				362E49CD24A668D500470330 /* AppDelegate.swift */,
+				362E49CF24A668D500470330 /* SceneDelegate.swift */,
+				36F3B8F024A6781E0031568E /* Main.storyboard */,
+				362E49D624A668D800470330 /* Assets.xcassets */,
+				362E49D824A668D800470330 /* LaunchScreen.storyboard */,
+				362E49DB24A668D800470330 /* Info.plist */,
+			);
+			path = SkillBox12_Carthage;
+			sourceTree = "<group>";
+		};
+		36F3B8DB24A6736F0031568E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				36F3B8F624A67A6B0031568E /* SVProgressHUD.framework */,
+				36F3B8F724A67A6B0031568E /* SwiftyJSON.framework */,
+				36F3B8DD24A673760031568E /* Alamofire.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		36F3B8E224A675630031568E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				36F3B8E524A6757A0031568E /* CurrentWeatherModel.swift */,
+				36F3B8E424A6757A0031568E /* DailyWeatherModel.swift */,
+				36F3B8E324A6757A0031568E /* DateFormatter.swift */,
+				36F3B8E624A6757A0031568E /* WeatherLoader.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		36F3B8EB24A677D30031568E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				36F3B8EC24A677FD0031568E /* CurrentViewController.swift */,
+				36F3B8ED24A677FD0031568E /* DailyTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		36F3B8F324A679FB0031568E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				36F3B8F424A67A0D0031568E /* DayTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		362E49C924A668D500470330 /* SkillBox12_Carthage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 362E49DE24A668D800470330 /* Build configuration list for PBXNativeTarget "SkillBox12_Carthage" */;
+			buildPhases = (
+				362E49C624A668D500470330 /* Sources */,
+				362E49C724A668D500470330 /* Frameworks */,
+				362E49C824A668D500470330 /* Resources */,
+				36F3B8E024A673760031568E /* Embed Frameworks */,
+				36F3B8E124A673AC0031568E /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SkillBox12_Carthage;
+			productName = SkillBox12_Carthage;
+			productReference = 362E49CA24A668D500470330 /* SkillBox12_Carthage.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		362E49C224A668D500470330 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Антон Тимоненков";
+				TargetAttributes = {
+					362E49C924A668D500470330 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = 362E49C524A668D500470330 /* Build configuration list for PBXProject "SkillBox12_Carthage" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 362E49C124A668D500470330;
+			productRefGroup = 362E49CB24A668D500470330 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				362E49C924A668D500470330 /* SkillBox12_Carthage */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		362E49C824A668D500470330 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				362E49DA24A668D800470330 /* LaunchScreen.storyboard in Resources */,
+				362E49D724A668D800470330 /* Assets.xcassets in Resources */,
+				36F3B8F224A6781E0031568E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		36F3B8E124A673AC0031568E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		362E49C624A668D500470330 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36F3B8EE24A677FD0031568E /* CurrentViewController.swift in Sources */,
+				36F3B8E724A6757B0031568E /* DateFormatter.swift in Sources */,
+				36F3B8F524A67A0D0031568E /* DayTableViewCell.swift in Sources */,
+				36F3B8EF24A677FD0031568E /* DailyTableViewController.swift in Sources */,
+				36F3B8E924A6757B0031568E /* CurrentWeatherModel.swift in Sources */,
+				362E49CE24A668D500470330 /* AppDelegate.swift in Sources */,
+				36F3B8EA24A6757B0031568E /* WeatherLoader.swift in Sources */,
+				362E49D024A668D500470330 /* SceneDelegate.swift in Sources */,
+				36F3B8E824A6757B0031568E /* DailyWeatherModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		362E49D824A668D800470330 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				362E49D924A668D800470330 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		36F3B8F024A6781E0031568E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				36F3B8F124A6781E0031568E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		362E49DC24A668D800470330 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		362E49DD24A668D800470330 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		362E49DF24A668D800470330 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5TW24T8NUM;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = SkillBox12_Carthage/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Lynxy.SkillBox12-Carthage";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		362E49E024A668D800470330 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5TW24T8NUM;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = SkillBox12_Carthage/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Lynxy.SkillBox12-Carthage";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		362E49C524A668D500470330 /* Build configuration list for PBXProject "SkillBox12_Carthage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				362E49DC24A668D800470330 /* Debug */,
+				362E49DD24A668D800470330 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		362E49DE24A668D800470330 /* Build configuration list for PBXNativeTarget "SkillBox12_Carthage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				362E49DF24A668D800470330 /* Debug */,
+				362E49E024A668D800470330 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 362E49C224A668D500470330 /* Project object */;
+}
